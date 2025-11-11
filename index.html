@@ -1,0 +1,134 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Nike — Página demo</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+  function verificarEdad() {
+    let edad = prompt("Cuantos años tenés?");
+    if (edad>=18){
+        document.getElementById("resultado").innerText = "Bienvenido";
+    } else {
+        document.getElementById("resultado").innerText = "denegado";
+    }
+} 
+</script>
+</head>
+<body>
+    <button onclick = "verificarEdad()">Ingresar</button>
+        <p id="resultado"></p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="Nike, ir al inicio">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Logo Nike" class="brand-logo">
+        <span class="brand-name">Nike, Inc.</span>
+      </a>
+      <button id="menuToggle" class="menu-toggle" aria-controls="mainNav" aria-expanded="false">☰</button>
+      <nav id="mainNav" class="main-nav" aria-hidden="true">
+        <ul>
+          <li><a href="#about">Historia</a></li>
+          <li><a href="#products">Productos</a></li>
+          <li><a href="#gallery">Galería</a></li>
+          <li><a href="#location">Ubicación</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <h1>Nike, Inc.</h1>
+        <p class="lead">Innovación en calzado, indumentaria y equipamiento deportivo desde 1964.</p>
+      </div>
+    </section>
+
+```
+<section id="about" class="container about">
+  <h2>Historia (breve)</h2>
+  <p>
+    Fundada en 1964 como Blue Ribbon Sports por Bill Bowerman y Phil Knight, la compañía pasó a llamarse Nike, Inc. en 1971. Su icónico "Swoosh" y la filosofía de innovación en rendimiento convirtieron a Nike en una de las marcas deportivas más reconocidas del mundo. Nike desarrolla tecnología para running, apps de entrenamiento y colabora con atletas y diseñadores para productos de alto rendimiento y estilo.
+  </p>
+</section>
+
+<section id="products" class="container products">
+  <h2>Productos y servicios destacados</h2>
+  <div class="product-grid">
+    <article class="product-card">
+      <h3>Nike Air</h3>
+      <p>Sistema de amortiguación con cámaras de aire en el calzado, presente en múltiples modelos clásicos y actuales.</p>
+    </article>
+    <article class="product-card">
+      <h3>Nike Running</h3>
+      <p>Calzado y prendas técnicas diseñadas para correr: ZoomX, React y otras tecnologías.</p>
+    </article>
+    <article class="product-card">
+      <h3>Nike Training</h3>
+      <p>Ropa y accesorios para entrenamiento funcional, con tejidos de alto rendimiento.</p>
+    </article>
+    <article class="product-card">
+      <h3>Jordan Brand</h3>
+      <p>Submarca icónica de basketball y estilo urbano con colaboraciones limitadas.</p>
+    </article>
+  </div>
+</section>
+
+<section id="gallery" class="container gallery">
+  <h2>Galería</h2>
+  <div class="gallery-grid">
+    <figure>
+      <img src="foto3.webp" alt="Zapatillas Nike.">
+      <figcaption>Logotipo Nike (Swoosh).</figcaption>
+    </figure>
+    <figure>
+      <img src="foto1.webp" alt="Zapatillas Nike">
+      <figcaption>Zapatillas Nike.</figcaption>
+    </figure>
+    <figure>
+      <img src="foto2.webp" alt="Zapatillas Nike">
+      <figcaption>Zapatillas Nike..</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="location" class="container location">
+  <h2>Ubicación principal (oficina global)</h2>
+  <address>
+    Nike, Inc.<br>
+    One Bowerman Drive<br>
+    Beaverton, OR 97005, USA
+  </address>
+  <div class="mapframe">
+    <iframe title="Mapa Nike" src="https://www.google.com/maps?q=One+Bowerman+Drive+Beaverton&amp;output=embed" loading="lazy"></iframe>
+  </div>
+</section>
+
+<section id="contact" class="container contact">
+  <h2>Contacto y redes sociales</h2>
+  <p>Visita el sitio oficial o síguenos en redes para novedades, lanzamientos y atención al cliente.</p>
+  <ul class="social-links">
+    <li><a href="https://www.nike.com/" target="_blank" rel="noopener">Sitio oficial</a></li>
+    <li><a href="https://www.facebook.com/nike" target="_blank" rel="noopener">Facebook</a></li>
+    <li><a href="https://www.instagram.com/nike/" target="_blank" rel="noopener">Instagram</a></li>
+    <li><a href="https://twitter.com/Nike" target="_blank" rel="noopener">Twitter/X</a></li>
+    <li><a href="https://www.youtube.com/user/nike" target="_blank" rel="noopener">YouTube</a></li>
+  </ul>
+</section>
+```
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Nike, Inc. Página demostración.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
